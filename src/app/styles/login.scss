@@ -1,0 +1,52 @@
+@use 'common';
+
+.form-login {
+  font-family: common.$font-rg;
+
+  .error {
+    color: #f00;
+    margin-left: 2px;
+    font-family: common.$font-lt;
+  }
+
+  a {
+    color: common.$primary-color !important;
+  }
+
+  h1 {
+    font-family: common.$font-bd;
+  }
+
+  .login-input {
+    appearance: none;
+    font-family: common.$font-rg;
+    background-color: transparent;
+    color: common.$primary-color;
+    border-color: transparent;
+    border-width: 1px;
+    border-radius: 0px;
+    padding-top: 0.5rem;
+    padding-right: 0.75rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .login-input:focus {
+    outline: 2px solid transparent;
+    box-shadow: 0 0 #0000;
+    border-color: transparent;
+  }
+
+  .login-input::placeholder {
+    color: common.$primary-color;
+    opacity: 1;
+  }
+
+  input::-ms-reveal,
+  input::-ms-clear {
+    display: none;
+  }
+
+}

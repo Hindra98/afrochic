@@ -1,0 +1,7 @@
+﻿{
+  "MODULES_Business_OpticalReader_Device_NotFound": "Device not found",
+  "MODULES_Business_UpdateCustomerCommand_Name": "The name of enterprise is required",
+  "MODULES_Business_UpdateCustomerCommand_LastName": "The last name of the customer is required",
+  "MODULES_Business_UpdateCustomerCommand_FirstName": "The first name of the customer is required",
+  "MODULES_Business_UpdateCustomerCommand_CellPhones": "The customer must provide at leat one mobile phone"
+}

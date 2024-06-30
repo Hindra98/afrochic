@@ -1,0 +1,7 @@
+﻿{
+  "MODULES_Business_OpticalReader_Device_NotFound": "Appareil introuvable",
+  "MODULES_Business_UpdateCustomerCommand_Name": "Le nom de l'entreprise cliente est requis",
+  "MODULES_Business_UpdateCustomerCommand_LastName": "Le nom du client est requis",
+  "MODULES_Business_UpdateCustomerCommand_FirstName": "Le prénom du client est requis",
+  "MODULES_Business_UpdateCustomerCommand_CellPhones": "Le client doit fournir au moins un numéro de téléphone portable"
+}

@@ -1,0 +1,37 @@
+@use "../../common";
+
+body:has(#menu-wrapper) {
+  background-color: #f6f6f6 !important;
+}
+
+.afrochic::-webkit-scrollbar {
+  width: 5px !important;
+}
+.afrochic::-webkit-scrollbar-track {
+  background-color: common.$secondary-color !important;
+  border-radius: 100px !important;
+}
+.afrochic::-webkit-scrollbar-thumb {
+  background-color: common.$primary-color !important;
+  border-radius: 100px !important;
+}
+
+.afrochic {
+  overflow-y: auto !important;
+  scrollbar-width: none !important;
+  font-family: common.$font-rg !important;
+  header nav {
+    background-color: common.$primary-color;
+    a {
+      font-family: common.$font-lt !important;
+      font-weight: bold !important;
+      &:hover {
+        text-decoration: underline;
+      }
+      &.active, &:hover {
+        color: common.$secondary-color;
+        text-decoration: underline;
+      }
+    }
+  }
+}

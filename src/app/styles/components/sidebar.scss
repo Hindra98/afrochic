@@ -1,0 +1,77 @@
+@use "../common.scss";
+
+.sidebar {
+  transition: all .3s ease !important;
+  .menu-item {
+    transition-delay: 30ms !important;
+  }
+}
+.sidebar.open {
+  width: 240px !important;
+}
+
+.sidebar.close {
+  width: 48px !important;
+}
+
+.sidebar-menu::-webkit-scrollbar {
+  width: 5px !important;
+}
+
+.sidebar-menu::-webkit-scrollbar-track {
+  background-color: rgba(44, 47, 124, .1) !important;
+  border-radius: 100px !important;
+}
+
+.sidebar-menu::-webkit-scrollbar-thumb {
+  background-color: rgba(244, 4, 4, .5) !important;
+  border-radius: 100px !important;
+}
+
+/*
+.sidebar {
+  // position: fixed;
+  height: 100vh !important;
+  transition: .6s ease-in;
+  .sidebar-menu{
+    height: 100%;
+    overflow-y: auto;
+
+    a {
+      padding: 10px 7px;
+    }
+    a:hover {
+      background-color: red !important;
+      color: #fff !important;
+    }
+    
+  #setting {
+    margin-top: auto !important;
+    margin-bottom: 17px !important;
+  }
+  }
+}
+
+.sidebar-menu::-webkit-scrollbar {
+  width: 5px !important;
+}
+
+.sidebar-menu::-webkit-scrollbar-track {
+  background-color: rgba(44, 47, 124, .1) !important;
+  border-radius: 100px !important;
+}
+
+.sidebar-menu::-webkit-scrollbar-thumb {
+  background-color: rgba(244, 4, 4, .5) !important;
+  border-radius: 100px !important;
+}
+
+.sidebar.open {
+  width: 250px !important;
+}
+
+.sidebar.close {
+  width: 50px !important;
+}
+
+*/
