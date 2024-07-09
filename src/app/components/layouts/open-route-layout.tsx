@@ -18,17 +18,22 @@ export default function OpenRouteLayout() {
           <header className="w-full">
             <nav className="flex flex-row w-full justify-between items-center p-2">
               <div className="actions flex flex-row items-center justify-start gap-4">
-                <NavLink to={"/"}>Home</NavLink>
+                <NavLink to={"/"}>AfroChic</NavLink>
                 <NavLink to={"/contact"}>contact</NavLink>
               </div>
               <div className="user flex flex-row items-center justify-end gap-4">
                 <NavLink to={"/admin"}>Administrateur</NavLink>
+                <NavLink to={"/shop"}>Boutique</NavLink>
                 <NavLink to={"/login"}>Login</NavLink>
                 <NavLink to={"/register"}>Register</NavLink>
               </div>
             </nav>
           </header>
-          <div className="outlet w-full"> {outlet} </div>
+
+          <div className="outlet w-full open-layout">
+            <div>{outlet}</div>
+          {/* <Footer /> */}
+          </div>
         </div>
       </KindeProvider>
     </>

@@ -1,9 +1,8 @@
-import { all, fork } from "redux-saga/effects";
-import { watchGetLanguagesSaga } from "./languages-sagas";
-import { watchAuthenticateUserSaga } from "./oauth-sagas";
+
+// import { all, fork } from "redux-saga/effects";
 
 export default function* rootSaga() {
-  yield all([fork(watchAuthenticateUserSaga), fork(watchGetLanguagesSaga)]);
+  // yield all([fork(watchAuthenticateUserSaga), fork(watchGetLanguagesSaga)]);
 }
 
 

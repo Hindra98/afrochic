@@ -1,1 +1,0 @@
-export type Localizers = 'Shared-ResShared' | 'Common-ResCommon' | 'Domain-ResDomain'

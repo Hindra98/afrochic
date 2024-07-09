@@ -7,4 +7,5 @@ export const customHttpHeaders = {
     AUTHORIZATION: "Authorization",
 }
 
-export const apiBaseUrl = "https://api.8pusfx.com/api/";
+export const apiBaseUrl = "https://api.8pusfx.com/api/"; // api online endpoint
+export const apiBaseUrl_local = "http://api.8pusfx.local/api/"; // api local endpoint

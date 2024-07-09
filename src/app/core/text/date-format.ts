@@ -9,3 +9,11 @@ export const serializeDate = (date: Date) => {
         + new Date().getTimezoneOffset() * 60 * 1000) // Applying the default time offset
         .toISOString()
 }
+
+export const formatDate = (date: string) => {
+    const tab = date.split('T');
+    const dateTab = tab[0];
+    const timeTab = tab[1].split('.')[0];
+    
+    return dateTab+" - "+timeTab;
+}

@@ -28,3 +28,7 @@ export function toKebabCase(value: string) {
         .replace(/([a-z0-9]|(?=[A-Z]))([A-Z])/g, '$1-$2')
         .toLowerCase();
 }
+
+export function toInt(value: string){
+    return parseInt(value);
+}

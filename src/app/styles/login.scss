@@ -21,7 +21,7 @@
     appearance: none;
     font-family: common.$font-rg;
     background-color: transparent;
-    color: common.$primary-color;
+    color: #000;
     border-color: transparent;
     border-width: 1px;
     border-radius: 0px;
@@ -40,7 +40,6 @@
   }
 
   .login-input::placeholder {
-    color: common.$primary-color;
     opacity: 1;
   }
 
@@ -48,5 +47,4 @@
   input::-ms-clear {
     display: none;
   }
-
 }
