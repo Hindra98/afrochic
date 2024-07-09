@@ -4,24 +4,25 @@ body:has(#menu-wrapper) {
   background-color: #f6f6f6 !important;
 }
 
-.afrochic::-webkit-scrollbar {
+.afrochic .open-layout::-webkit-scrollbar {
   width: 5px !important;
 }
-.afrochic::-webkit-scrollbar-track {
-  background-color: common.$secondary-color !important;
+.afrochic .open-layout::-webkit-scrollbar-track {
+  background-color: common.$primary-color !important;
   border-radius: 100px !important;
 }
-.afrochic::-webkit-scrollbar-thumb {
-  background-color: common.$primary-color !important;
+.afrochic .open-layout::-webkit-scrollbar-thumb {
+  background-color: common.$secondary-color !important;
   border-radius: 100px !important;
 }
 
 .afrochic {
-  overflow-y: auto !important;
+  overflow: hidden !important;
   scrollbar-width: none !important;
   font-family: common.$font-rg !important;
   header nav {
     background-color: common.$primary-color;
+    height: 40px !important;
     a {
       font-family: common.$font-lt !important;
       font-weight: bold !important;
@@ -32,6 +33,17 @@ body:has(#menu-wrapper) {
         color: common.$secondary-color;
         text-decoration: underline;
       }
+    }
+  }
+  .open-layout {
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    // scrollbar-width: none !important;
+    font-family: common.$font-rg !important;
+    height: calc(100vh - 41px) !important;
+    .error {
+      // color: common.$error-color !important;
+      font-size: 12px;
     }
   }
 }

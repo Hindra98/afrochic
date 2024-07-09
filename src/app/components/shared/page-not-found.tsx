@@ -1,11 +1,9 @@
 import { Link } from "react-router-dom";
 import "../../styles/_page-not-found.scss"
 import { useLocalizer } from "src/app/core/Localization";
-import { loadTranslationResources } from "src/app/core/Localization/load-language-resource";
 
 export function PageNotFound() {
 
-    loadTranslationResources();
     const commonLocalizer = useLocalizer("Common-ResCommon");
 
     return (

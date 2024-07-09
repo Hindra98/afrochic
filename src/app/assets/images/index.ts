@@ -75,6 +75,8 @@ import ricoh5 from "../images/products/imprimante/ricoh5.webp";
 import espson1 from "../images/products/imprimante/espson1.webp";
 import espson2 from "../images/products/imprimante/espson2.webp";
 
+import banner from "../images/banner/boutique-conslutant.jpg"
+
 export {
   logo,
   logoLight,
@@ -154,4 +156,5 @@ export {
   ricoh5,
   espson1,
   espson2,
+  banner,
 };

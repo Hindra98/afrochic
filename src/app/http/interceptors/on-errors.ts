@@ -1,6 +1,6 @@
 import { AxiosError } from 'axios';
-import { log } from '../../core/logging';
-import { createClientHttpErrorLogParcel } from '../../core/logging/log-building';
+// import { log } from '../../core/logging';
+// import { createClientHttpErrorLogParcel } from '../../core/logging/log-building';
 
 
 /**
@@ -23,7 +23,7 @@ export const onRequestError = (error: AxiosError): Promise<AxiosError> => {
  */
 export const onResponseError = async (error: AxiosError): Promise<any> => {
 
-    log.error(createClientHttpErrorLogParcel(error), 'Server access prohibited because the jwt token expired.');
+    // log.error(createClientHttpErrorLogParcel(error), 'Server access prohibited because the jwt token expired.');
 
     if(error.code === "ERR_NETWORK"){
       return Promise.resolve();

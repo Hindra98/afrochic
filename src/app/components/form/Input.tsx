@@ -34,12 +34,12 @@ export default function InputWithIcon({
         {eye &&
           (showPassword ? (
             <span
-              className="e-icons e-eye-slash cursor-pointer text-2xl font-medium"
+              className="icon eye-off-1icon- cursor-pointer text-lg font-medium"
               onClick={() => setShowPassword(!showPassword)}
             ></span>
           ) : (
             <span
-              className="e-icons e-eye cursor-pointer text-2xl font-medium"
+              className="icon eye-1icon- cursor-pointer text-lg font-medium"
               onClick={() => setShowPassword(!showPassword)}
             ></span>
           ))}

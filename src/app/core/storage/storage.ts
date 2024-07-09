@@ -14,12 +14,12 @@ export function setStorage(key: string, value:string) {
  * @param clearable Boolean to indicate whether to remove item after get, default: false
  * @return string containing the value of the key. If the key does not exist, null is returned
  */
-export function getStorage(key: string, clearable = false) {
+export function getStorage<TItem>(key: string, clearable = false) : TItem {
     const dataStorage = localStorage.getItem(key);
 
     if (dataStorage !== null && clearable) {
         localStorage.removeItem(key)
     }
 
-    return dataStorage;
+    return dataStorage as TItem;
 }
